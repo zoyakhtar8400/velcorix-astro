@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeader from '../components/PageHeader.astro';
 import CtaSection from '../components/CtaSection.astro';
 
-const categories = [
+const generalCategories = [
   {
     title: "HARDWARE",
     image: "/assets/images/trading/hardware1.png",
@@ -104,24 +104,10 @@ const categories = [
       "Surgical Gloves",
       "Chemical Gloves"
     ]
-  },
-  {
-    title: "STRUCTURAL STEEL",
-    image: "/assets/images/trading/steel1.png",
-    icon: "fas fa-cubes",
-    link: "/trading/structural-steel",
-    products: [
-      "Beams",
-      "Channels",
-      "Angles",
-      "Merchant Bars",
-      "Mild Steel Sheets & Plates",
-      "Chequered Plates",
-      "Galvanized Sheets",
-      "Cold Rolled Sheets",
-      "Gratings"
-    ]
-  },
+  }
+];
+
+const equipmentCategories = [
   {
     title: "ATEX PRODUCTS",
     image: "/assets/images/trading/atex1.png",
@@ -147,63 +133,219 @@ const categories = [
     ]
   },
   {
-    title: "H120 DOORS & WINDOWS",
-    image: "/assets/images/trading/h120.png",
-    icon: "fas fa-door-closed",
-    link: "/trading/h120-doors-windows",
+    title: "GENERATORS",
+    image: "/assets/images/other/10kw-diesel-power-generator.jpg",
+    icon: "fas fa-bolt",
+    link: "/trading/generators",
     products: [
-      "H120 Fire Rated & Blast Doors",
-      "H120 Fire Windows & Vision Panels"
+      "Standard DG Sets",
+      "Silent DG Sets",
+      "Zone 2 Rated DG Sets (ATEX Certified)",
+      "Containerized DG Sets (500 / 1,000 kVA)"
+    ]
+  },
+  {
+    title: "LIFTING & HANDLING EQUIPMENT",
+    image: "/assets/images/rentals/eot-cranes.jpg",
+    icon: "fas fa-weight-hanging",
+    link: "/trading/lifting-handling",
+    products: [
+      "Overhead Cranes (5T–20T)",
+      "Jib Cranes (250 kg–5T)",
+      "Chain Blocks (0.5T–20T)",
+      "Electric Winches (2T–30T)"
+    ]
+  },
+  {
+    title: "FLUID HANDLING & CLEANING EQUIPMENT",
+    image: "/assets/images/rentals/hydrotest-3.jpg",
+    icon: "fas fa-water",
+    link: "/trading/fluid-handling",
+    products: [
+      "Oil Flushing Units (NAS 1638 / ISO 4406)",
+      "High Pressure Hydro Jetting Machines (700–1,000 Bar)",
+      "Transfer Pumps with Skids",
+      "Process Pumps with Skids",
+      "Industrial Pumps with Skids"
+    ]
+  },
+  {
+    title: "SITE SUPPORT EQUIPMENT",
+    image: "/assets/images/rentals/Rotary-Screw-Compressors.jpg",
+    icon: "fas fa-campground",
+    link: "/trading/site-support",
+    products: [
+      "Site Cabins (Office / Accommodation)",
+      "LED Lighting Towers",
+      "Air Compressors (Portable / Electric)",
+      "Explosion-Proof Blowers (ATEX)",
+      "DNV Baskets (10 ft × 8 ft / 20 ft × 8 ft)"
+    ]
+  },
+  {
+    title: "CONTAINER MATERIALS & ACCESSORIES",
+    image: "/assets/images/trading/h120.png",
+    icon: "fas fa-boxes",
+    link: "/trading/container-materials",
+    products: [
+      "Sandwich Panels (PU / PIR)",
+      "Rockwool Insulation (Boards / Rolls)",
+      "Standard Doors",
+      "H120 Fire-Rated & Blast Doors",
+      "Standard Windows",
+      "H120 Fire-Rated Windows & Vision Panels",
+      "Split AC Units",
+      "Window AC Units",
+      "Industrial AC Units",
+      "Exhaust Fans"
+    ]
+  }
+];
+
+const steelCategories = [
+  {
+    title: "STRUCTURAL STEEL",
+    image: "/assets/images/trading/steel1.png",
+    icon: "fas fa-cubes",
+    link: "/trading/structural-steel",
+    products: [
+      "Beams",
+      "Channels",
+      "Angles",
+      "Merchant Bars",
+      "Mild Steel Sheets & Plates",
+      "Chequered Plates",
+      "Galvanized Sheets",
+      "Cold Rolled Sheets",
+      "Gratings"
     ]
   }
 ];
 ---
-<BaseLayout title="Trading Categories - Velcorix" description="Explore Velcorix's comprehensive range of mechanical trading products.">
+<BaseLayout title="Trading Categories - Velcorix" description="Explore Velcorix's comprehensive range of industrial equipment trading, structural steel, and mechanical supply products.">
   <PageHeader 
     title="Trading Categories" 
-    subtitle="Our Comprehensive Range of Quality Products" 
+    subtitle="Our Comprehensive Range of Quality Products & Industrial Equipment" 
     bgImage="/assets/images/hero/DSC_2364-1920.jpg" 
   />
 
   <section class="py-5 bg-light">
     <div class="container text-center">
       <p class="lead mb-0">
-        Velcorix provides high-quality trading materials for construction, manufacturing, and industrial operations across the UAE. Browse our extensive inventory of unique products below.
+        Velcorix provides high-quality industrial equipment supply, structural steel, and trading materials for construction, manufacturing, and oil & gas operations across the UAE.
       </p>
     </div>
   </section>
 
-  <section class="section-padding">
+  <!-- Mechanical Consumables & Supplies Section -->
+  <section class="section-padding pb-4">
     <div class="container">
-      <div class="row g-4">
-        {categories.map((cat) => (
+      <div class="section-title text-center mb-5">
+        <h2 class="fw-bold display-6" style="color: #1a284c;">MECHANICAL CONSUMABLES & SUPPLIES</h2>
+        <p class="text-muted">Hardware, PPE, stationery, and welding consumables</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        {generalCategories.map((cat) => (
           <div class="col-lg-4 col-md-6">
             <a href={cat.link} class="text-decoration-none text-dark d-block h-100">
               <div class="trading-category-card h-100 shadow-sm bg-white rounded overflow-hidden">
                 <div class="card-img-container position-relative d-flex align-items-center justify-content-center bg-white" style="height: 220px; padding: 1.25rem;">
-                  <img src={cat.image} alt={cat.title} class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.02) contrast(1.02); image-rendering: -webkit-optimize-contrast;" onerror="this.onerror=null; this.src='/assets/images/logo/velcorix-logo.png';" />
+                  <img src={cat.image} alt={cat.title} class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.02) contrast(1.02);" onerror="this.onerror=null; this.src='/assets/images/logo/velcorix-logo.png';" />
                   <div class="icon-badge text-white position-absolute d-flex align-items-center justify-content-center rounded-circle shadow" style="background-color: #c7a14a;">
                     <i class={cat.icon}></i>
                   </div>
                 </div>
                 <div class="card-body p-4 pt-5 text-center">
-                  <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
-                    <h4 class="fw-bold mb-0" style="color: #1a284c;">{cat.title}</h4>
-                  </div>
+                  <h5 class="fw-bold mb-2" style="color: #1a284c;">{cat.title}</h5>
                   <div class="badge bg-light text-dark border mb-3">{cat.products.length} Products</div>
                   
                   <ul class="list-unstyled text-start mb-0">
-                    {cat.products.length > 0 ? (
-                      <Fragment>
-                        {cat.products.slice(0, 5).map((product) => (
-                          <li class="mb-2 text-muted small border-bottom pb-1 text-truncate"><i class="fas fa-check text-primary me-2 opacity-50"></i> {product}</li>
-                        ))}
-                        {cat.products.length > 5 && (
-                          <li class="mb-2 text-primary small fw-bold text-center pt-2">+ {cat.products.length - 5} more...</li>
-                        )}
-                      </Fragment>
-                    ) : (
-                      <li class="mb-2 text-muted small fst-italic text-center">Coming soon</li>
+                    {cat.products.slice(0, 5).map((product) => (
+                      <li class="mb-2 text-muted small border-bottom pb-1 text-truncate"><i class="fas fa-check text-primary me-2 opacity-50"></i> {product}</li>
+                    ))}
+                    {cat.products.length > 5 && (
+                      <li class="mb-2 text-primary small fw-bold text-center pt-2">+ {cat.products.length - 5} more...</li>
+                    )}
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Industrial Equipment Trading Section -->
+  <section class="section-padding bg-light pb-4">
+    <div class="container">
+      <div class="section-title text-center mb-5">
+        <h2 class="fw-bold display-6" style="color: #1a284c;">INDUSTRIAL EQUIPMENT TRADING</h2>
+        <p class="text-muted">ATEX products, generators, lifting & handling, fluid handling, site support, container materials & H120 fire doors</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        {equipmentCategories.map((cat) => (
+          <div class="col-lg-4 col-md-6">
+            <a href={cat.link} class="text-decoration-none text-dark d-block h-100">
+              <div class="trading-category-card h-100 shadow-sm bg-white rounded overflow-hidden">
+                <div class="card-img-container position-relative d-flex align-items-center justify-content-center bg-white" style="height: 220px; padding: 1.25rem;">
+                  <img src={cat.image} alt={cat.title} class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.02) contrast(1.02);" onerror="this.onerror=null; this.src='/assets/images/logo/velcorix-logo.png';" />
+                  <div class="icon-badge text-white position-absolute d-flex align-items-center justify-content-center rounded-circle shadow" style="background-color: #ea8223;">
+                    <i class={cat.icon}></i>
+                  </div>
+                </div>
+                <div class="card-body p-4 pt-5 text-center">
+                  <h5 class="fw-bold mb-2" style="color: #1a284c;">{cat.title}</h5>
+                  <div class="badge bg-light text-dark border mb-3">{cat.products.length} Products</div>
+                  
+                  <ul class="list-unstyled text-start mb-0">
+                    {cat.products.slice(0, 5).map((product) => (
+                      <li class="mb-2 text-muted small border-bottom pb-1 text-truncate"><i class="fas fa-check text-primary me-2 opacity-75"></i> {product}</li>
+                    ))}
+                    {cat.products.length > 5 && (
+                      <li class="mb-2 text-primary small fw-bold text-center pt-2">+ {cat.products.length - 5} more...</li>
+                    )}
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Steel & Metal Products Section (LAST) -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-title text-center mb-5">
+        <h2 class="fw-bold display-6" style="color: #1a284c;">STEEL & METAL PRODUCTS</h2>
+        <p class="text-muted">High-grade structural steel sections, plates, beams, channels, and gratings</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        {steelCategories.map((cat) => (
+          <div class="col-lg-4 col-md-6">
+            <a href={cat.link} class="text-decoration-none text-dark d-block h-100">
+              <div class="trading-category-card h-100 shadow-sm bg-white rounded overflow-hidden">
+                <div class="card-img-container position-relative d-flex align-items-center justify-content-center bg-white" style="height: 220px; padding: 1.25rem;">
+                  <img src={cat.image} alt={cat.title} class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.02) contrast(1.02);" onerror="this.onerror=null; this.src='/assets/images/logo/velcorix-logo.png';" />
+                  <div class="icon-badge text-white position-absolute d-flex align-items-center justify-content-center rounded-circle shadow" style="background-color: #c7a14a;">
+                    <i class={cat.icon}></i>
+                  </div>
+                </div>
+                <div class="card-body p-4 pt-5 text-center">
+                  <h5 class="fw-bold mb-2" style="color: #1a284c;">{cat.title}</h5>
+                  <div class="badge bg-light text-dark border mb-3">{cat.products.length} Products</div>
+                  
+                  <ul class="list-unstyled text-start mb-0">
+                    {cat.products.slice(0, 5).map((product) => (
+                      <li class="mb-2 text-muted small border-bottom pb-1 text-truncate"><i class="fas fa-check text-primary me-2 opacity-75"></i> {product}</li>
+                    ))}
+                    {cat.products.length > 5 && (
+                      <li class="mb-2 text-primary small fw-bold text-center pt-2">+ {cat.products.length - 5} more...</li>
                     )}
                   </ul>
                 </div>
@@ -216,8 +358,8 @@ const categories = [
   </section>
 
   <CtaSection 
-    heading="Looking for a specific product?" 
-    subtext="Our team can source it for you." 
+    heading="Looking for specific industrial equipment or supplies?" 
+    subtext="Our procurement team can source certified equipment for your project." 
     buttonText="Contact Us" 
     buttonLink="/contact" 
   />

@@ -1,0 +1,65 @@
+---
+import RentalDetailLayout from '../../layouts/RentalDetailLayout.astro';
+
+const pageData = {
+  metaTitle: "Lifting & Handling Equipment - Velcorix Trading",
+  metaDesc: "Safe and efficient lifting solutions in UAE. Overhead cranes, jib cranes, chain blocks, and electric winches for industrial projects.",
+  header: {
+    title: "Lifting & Handling Equipment",
+    subtitle: "Safe and efficient lifting for every operation",
+    bgImage: "/assets/images/rentals/cranes-2.jpg"
+  },
+  intro: {
+    image: "/assets/images/rentals/eot-cranes.jpg",
+    imageAlt: "Lifting & Handling Equipment",
+    heading: "Industrial Lifting & Material Handling Equipment"
+  },
+  products: [
+    { name: "Overhead Cranes (5T – 20T)", image: "/assets/images/rentals/eot-cranes.jpg", desc: "Single and double girder EOT overhead cranes for workshops and plants." },
+    { name: "Jib Cranes (250 kg – 5T)", image: "/assets/images/rentals/cranes-2.jpg", desc: "Pillar and wall-mounted jib cranes for localized material handling." },
+    { name: "Chain Blocks (0.5T – 20T)", image: "/assets/images/rentals/cranes.webp", desc: "Heavy-duty manual and pneumatic chain hoist blocks." },
+    { name: "Electric Winches (2T – 30T)", image: "/assets/images/products/lifting/electrixwinches.png", desc: "Industrial electric and hydraulic pulling and lifting winches." }
+  ],
+  offerings: [
+    { title: "Wide Load Range", desc: "Capacities ranging from 250 kg up to 30 Tons.", icon: "fas fa-weight-hanging" },
+    { title: "Certified Safety", desc: "Third-party inspection & load test certified equipment.", icon: "fas fa-certificate" },
+    { title: "Custom Solutions", desc: "Tailored span and lift heights for your facility.", icon: "fas fa-ruler-combined" },
+    { title: "Site Installation", desc: "Erection, commissioning, and preventive maintenance support.", icon: "fas fa-tools" }
+  ],
+  applications: [
+    { title: "Manufacturing Plants", desc: "Overhead crane installation for machine shops and assembly lines.", icon: "fas fa-industry" },
+    { title: "Shipyards & Ports", desc: "Heavy winches and jib cranes for marine fabrication.", icon: "fas fa-ship" },
+    { title: "Warehouses", desc: "Efficient load handling and vertical hoisting systems.", icon: "fas fa-warehouse" },
+    { title: "Construction Sites", desc: "Rigging accessories and heavy chain blocks.", icon: "fas fa-building" }
+  ],
+  specifications: {
+    image: "/assets/images/rentals/eot-cranes.jpg",
+    items: [
+      { key: "Crane Capacity", value: "Overhead (5T - 20T), Jib (250kg - 5T)" },
+      { key: "Winch Capacity", value: "2T to 30T" },
+      { key: "Chain Block Range", value: "0.5T to 20T" },
+      { key: "Compliance", value: "BS EN 13001 / ASME B30 / LEEA Certified" }
+    ]
+  },
+  compliance: [
+    { title: "LEEA Standards", desc: "Manufactured and tested to LEEA & ASME lifting standards.", icon: "fas fa-shield-alt" },
+    { title: "Third-Party Certified", desc: "Includes mill certificates and 3rd party load test certificates.", icon: "fas fa-file-contract" },
+    { title: "Overload Protection", desc: "Fitted with limit switches and safety overload cut-offs.", icon: "fas fa-exclamation-triangle" },
+    { title: "Heavy Duty Build", desc: "High tensile materials designed for continuous industrial duty.", icon: "fas fa-cogs" }
+  ],
+  cta: {
+    heading: "Need Lifting Equipment Supplies?",
+    subtext: "Contact our technical team for custom capacities and quotations.",
+    buttonText: "Request a Quote",
+    buttonLink: "/contact"
+  }
+};
+---
+<RentalDetailLayout data={pageData}>
+  <p>
+    Velcorix supplies a full spectrum of certified lifting and material handling equipment for construction, manufacturing, and offshore modular projects across the UAE.
+  </p>
+  <p>
+    From single/double girder overhead cranes (5T–20T) and workstation jib cranes (250kg–5T) to heavy-duty chain blocks and electric winches up to 30 Tons, we provide reliable lifting machinery certified to rigorous international safety standards.
+  </p>
+</RentalDetailLayout>

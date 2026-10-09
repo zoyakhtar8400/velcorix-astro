@@ -1,0 +1,66 @@
+---
+import RentalDetailLayout from '../../layouts/RentalDetailLayout.astro';
+
+const pageData = {
+  metaTitle: "Site Support Equipment - Velcorix Trading",
+  metaDesc: "Site cabins, LED lighting towers, portable & electric air compressors, ATEX blowers, and DNV baskets supplied by Velcorix in UAE.",
+  header: {
+    title: "Site Support Equipment",
+    subtitle: "Everything you need for a productive site",
+    bgImage: "/assets/images/rentals/Liquid-Ring-Compressors.jpg"
+  },
+  intro: {
+    image: "/assets/images/products/site/site.png",
+    imageAlt: "Site Support Equipment",
+    heading: "Comprehensive Site Infrastructure & Support Machinery"
+  },
+  products: [
+    { name: "Site Cabins (Office / Accommodation)", image: "/assets/images/products/site/site.png", desc: "Modular, fully insulated office and accommodation site cabins." },
+    { name: "LED Lighting Towers", image: "/assets/images/products/site/led.png", desc: "High-efficiency LED mobile lighting towers for night operations." },
+    { name: "Air Compressors (Portable / Electric)", image: "/assets/images/rentals/Rotary-Screw-Compressors.jpg", desc: "Diesel portable and stationary electric air compressors." },
+    { name: "Explosion-Proof Blowers (ATEX)", image: "/assets/images/products/site/Explosion.png", desc: "ATEX certified explosion-proof ventilation blowers for confined spaces." },
+    { name: "DNV Baskets (10 ft × 8 ft / 20 ft × 8 ft)", image: "/assets/images/products/site/dnv.jpeg", desc: "DNV 2.7-1 certified cargo baskets for offshore & onshore logistics." }
+  ],
+  offerings: [
+    { title: "Turnkey Site Setup", desc: "Complete cabins, power, and site utilities ready for immediate operation.", icon: "fas fa-campground" },
+    { title: "ATEX Certified Blowers", desc: "Safe ventilation blowers for gas-hazardous confined spaces.", icon: "fas fa-fan" },
+    { title: "DNV 2.7-1 Offshore Baskets", desc: "Certified lifting baskets in 10ft & 20ft dimensions.", icon: "fas fa-box-open" },
+    { title: "Energy Efficient Lighting", desc: "LED lighting towers with extended fuel autonomy and wide coverage.", icon: "fas fa-lightbulb" }
+  ],
+  applications: [
+    { title: "Construction Camps", desc: "Modular office cabins and accommodation units.", icon: "fas fa-building" },
+    { title: "Confined Space Entry", desc: "ATEX blowers and portable compressors for vessel cleaning.", icon: "fas fa-shield-alt" },
+    { title: "Offshore Supply Lines", desc: "DNV cargo baskets for crane transfers and equipment transport.", icon: "fas fa-anchor" },
+    { title: "24/7 Night Operations", desc: "High-output LED lighting towers for round-the-clock site work.", icon: "fas fa-moon" }
+  ],
+  specifications: {
+    image: "/assets/images/products/site/dnv.jpeg",
+    items: [
+      { key: "Site Cabins", value: "Custom Office / Accommodation / Mess Hall Units" },
+      { key: "Air Compressors", value: "185 CFM to 1,200 CFM (7 to 24 Bar)" },
+      { key: "Blowers", value: "ATEX Zone 1 & Zone 2 Compliant Portable Blowers" },
+      { key: "DNV Baskets", value: "DNV 2.7-1 / EN 12079 Certified (10ft x 8ft & 20ft x 8ft)" }
+    ]
+  },
+  compliance: [
+    { title: "DNV 2.7-1 Certified", desc: "All cargo baskets feature full offshore lifting certification.", icon: "fas fa-certificate" },
+    { title: "ATEX Zone Approved", desc: "Explosion-proof blowers designed for safe hazardous area ventilation.", icon: "fas fa-shield-alt" },
+    { title: "Robust Build Quality", desc: "Weather-resistant, insulated materials built for Middle East climates.", icon: "fas fa-sun" },
+    { title: "Fast Mobilization", desc: "In-stock equipment ready for immediate dispatch across UAE.", icon: "fas fa-truck" }
+  ],
+  cta: {
+    heading: "Need Support Equipment for Your Site?",
+    subtext: "Contact our team for quick quotes on cabins, lighting, compressors, and DNV baskets.",
+    buttonText: "Request a Quote",
+    buttonLink: "/contact"
+  }
+};
+---
+<RentalDetailLayout data={pageData}>
+  <p>
+    Velcorix provides complete site support equipment to ensure continuous, safe, and efficient operations across construction sites, industrial plants, and offshore rigs in the UAE.
+  </p>
+  <p>
+    Our site support inventory includes modular office and accommodation site cabins, high-lumens LED lighting towers, portable and electric air compressors, ATEX explosion-proof ventilation blowers, and DNV 2.7-1 certified cargo baskets in 10ft and 20ft configurations.
+  </p>
+</RentalDetailLayout>

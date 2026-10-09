@@ -71,7 +71,7 @@ const compliance = data?.compliance || [];
                         src={prod.image} 
                         alt={prod.name} 
                         class="img-fluid" 
-                        style="max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.02) contrast(1.02); image-rendering: -webkit-optimize-contrast;" 
+                        style={prod.imageStyle || "max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.02) contrast(1.02); image-rendering: -webkit-optimize-contrast;"} 
                         onerror="this.onerror=null; this.src='/assets/images/logo/velcorix-logo.png';"
                       />
                     </div>

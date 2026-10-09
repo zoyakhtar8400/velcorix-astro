@@ -1,0 +1,64 @@
+---
+import RentalDetailLayout from '../../layouts/RentalDetailLayout.astro';
+
+const pageData = {
+  metaTitle: "Power Generators Supply - Velcorix Trading",
+  metaDesc: "High-performance diesel generators, Zone 2 ATEX certified DG sets, and containerized generators for supply and trading in UAE.",
+  header: {
+    title: "Power Generators",
+    subtitle: "Reliable power solutions for continuous operations",
+    bgImage: "/assets/images/other/10kw-diesel-power-generator.jpg"
+  },
+  intro: {
+    image: "/assets/images/products/Generator/Zone2.png",
+    imageAlt: "Power Generators Supply",
+    heading: "Industrial & Zone 2 Power Generator Supply"
+  },
+  products: [
+    { name: "Standard / Silent DG Sets", image: "/assets/images/other/10kw-diesel-power-generator.jpg", desc: "Acoustic, silent diesel generator sets from 50 kVA up to 2000 kVA." },
+    { name: "Zone 2 Rated DG Sets (ATEX Certified)", image: "/assets/images/products/Generator/Zone2.png", desc: "ATEX Zone 2 compliant generator sets with spark arrestors & shutdown valves for hazardous area supply." },
+    { name: "Containerized DG Sets (500 / 1,000 kVA)", image: "/assets/images/products/Generator/containersized.png", desc: "Heavy-duty containerized multi-megawatt generator units." }
+  ],
+  offerings: [
+    { title: "Wide Capacity Range", desc: "From compact portable sets to multi-megawatt site power.", icon: "fas fa-bolt" },
+    { title: "ATEX / Zone 2 Options", desc: "Fully certified units for offshore and refinery operations.", icon: "fas fa-shield-alt" },
+    { title: "Quick Mobilization", desc: "Ready stock available for fast deployment across UAE.", icon: "fas fa-truck-moving" },
+    { title: "On-Site Support", desc: "Comprehensive maintenance, spare parts, and site installation.", icon: "fas fa-headset" }
+  ],
+  applications: [
+    { title: "Construction Sites", desc: "Continuous baseline site power and emergency backup.", icon: "fas fa-building" },
+    { title: "Oil & Gas Operations", desc: "ATEX Zone 2 units for rigs and process plant turnarounds.", icon: "fas fa-oil-can" },
+    { title: "Modular Projects", desc: "Containerized generator solutions for industrial installations.", icon: "fas fa-boxes" },
+    { title: "Remote Facilities", desc: "Off-grid power generation for remote infrastructure.", icon: "fas fa-broadcast-tower" }
+  ],
+  specifications: {
+    image: "/assets/images/products/Generator/containersized.png",
+    items: [
+      { key: "Capacity Range", value: "50 kVA - 2,000 kVA" },
+      { key: "Certification", value: "ISO 8528 / ATEX Zone 2 / CE" },
+      { key: "Enclosure Type", value: "Soundproof Silent Canopy / 20ft Containerized" },
+      { key: "Noise Level", value: "70 dBA @ 7m" }
+    ]
+  },
+  compliance: [
+    { title: "International Standards", desc: "Fully compliant with international electrical and safety standards.", icon: "fas fa-certificate" },
+    { title: "Zone 2 Certified", desc: "Equipped with 3G Ex ec/Ex tc explosion protection for gas environments.", icon: "fas fa-shield-alt" },
+    { title: "Pre-Tested Fleet", desc: "Factory load bank tested prior to delivery.", icon: "fas fa-clipboard-check" },
+    { title: "Complete Accessories", desc: "Supplied with distribution panels, cabling, and auxiliary fuel tanks.", icon: "fas fa-plug" }
+  ],
+  cta: {
+    heading: "Looking to Purchase Power Generators?",
+    subtext: "Contact our sales team for specs, ATEX options, and competitive pricing.",
+    buttonText: "Request a Quote",
+    buttonLink: "/contact"
+  }
+};
+---
+<RentalDetailLayout data={pageData}>
+  <p>
+    Velcorix supplies high-quality diesel generators and containerized power solutions for construction, industrial, and modular projects across the UAE.
+  </p>
+  <p>
+    Our generator range includes standard silent sets, ATEX Zone 2 certified sets for hazardous oil & gas locations, and heavy-duty 500kVA to 1,000kVA containerized units designed for uninterrupted continuous power.
+  </p>
+</RentalDetailLayout>

@@ -1,0 +1,71 @@
+---
+import RentalDetailLayout from '../../layouts/RentalDetailLayout.astro';
+
+const pageData = {
+  metaTitle: "Container Materials, Accessories & H120 Fire Doors - Velcorix Trading",
+  metaDesc: "Sandwich panels (PU/PIR), Rockwool insulation, certified H120 fire-rated doors & windows, AC units, and exhaust fans supplied by Velcorix in UAE.",
+  header: {
+    title: "Container Materials & Accessories",
+    subtitle: "Modular Container Supplies & H120 Fire-Rated Doors & Windows",
+    bgImage: "/assets/images/trading/h120.png"
+  },
+  intro: {
+    image: "/assets/images/products/container/industrialac.jpg",
+    imageAlt: "Industrial AC & Container Materials",
+    heading: "Modular Container Construction Materials, H120 Fire Barriers & HVAC Supplies"
+  },
+  products: [
+    { name: "Sandwich Panels (PU / PIR)", image: "/assets/images/products/container/sandwich.jpeg", desc: "Polyurethane (PU) and Polyisocyanurate (PIR) insulated wall & roof sandwich panels." },
+    { name: "Rockwool Insulation (Boards / Rolls)", image: "/assets/images/products/container/rool.png", desc: "High-density Rockwool mineral wool insulation boards and acoustic rolls." },
+    { name: "Standard Doors", image: "/assets/images/products/container/door.jpeg", desc: "Heavy-duty steel and aluminum doors for modular containers and cabins." },
+    { name: "H120 Fire-Rated & Blast Doors", image: "/assets/images/products/H120/door.jpeg", desc: "Certified 120-minute A60 / H120 hydrocarbon fire-rated and blast-resistant safety doors." },
+    { name: "Standard Windows", image: "/assets/images/products/container/window.png", desc: "Double-glazed thermal and acoustic sliding/fixed windows." },
+    { name: "H120 Fire-Rated Windows & Vision Panels", image: "/assets/images/products/H120/window.jpg", desc: "Certified H120 hydrocarbon fire-rated vision panels and specialized ceramic fire glass windows." },
+    { name: "Split AC Units", image: "/assets/images/products/container/ac.jpeg", desc: "High-efficiency split air conditioners for office cabins and control rooms." },
+    { name: "Window AC Units", image: "/assets/images/products/container/windowac.png", desc: "Heavy-duty tropicalized window AC units built for desert climates." },
+    { name: "Industrial AC Units", image: "/assets/images/products/container/industrialac.jpg", desc: "Ductable industrial HVAC & rooftop package AC units." },
+    { name: "Exhaust Fans", image: "/assets/images/products/container/exhaust.jpg", desc: "Heavy-duty wall-mounted and inline industrial exhaust fans." }
+  ],
+  offerings: [
+    { title: "Insulation & Fire Safety", desc: "PIR sandwich panels & Rockwool meeting stringent civil defense standards.", icon: "fas fa-shield-alt" },
+    { title: "H120 Fire & Blast Doors", desc: "DNV/ABS certified H120 hydrocarbon fire doors and blast resistant barriers.", icon: "fas fa-door-closed" },
+    { title: "Desert-Grade Cooling", desc: "Tropical T3-rated AC units engineered for extreme ambient heat.", icon: "fas fa-snowflake" },
+    { title: "Modular Compatibility", desc: "Pre-cut and custom-sized accessories for easy container assembly.", icon: "fas fa-cubes" }
+  ],
+  applications: [
+    { title: "Modular Cabins & Containers", desc: "Complete insulation, door, window, and AC outfit kits.", icon: "fas fa-boxes" },
+    { title: "Substations & Control Rooms", desc: "H120 fire doors and industrial air conditioning.", icon: "fas fa-bolt" },
+    { title: "Offshore Modules", desc: "DNV certified H120 fire doors, Rockwool, and heavy-duty ventilation fans.", icon: "fas fa-ship" },
+    { title: "Cold Storage & Warehouses", desc: "High-density PU/PIR sandwich wall and ceiling panels.", icon: "fas fa-warehouse" }
+  ],
+  specifications: {
+    image: "/assets/images/products/container/sandwich.jpeg",
+    items: [
+      { key: "Sandwich Panels", value: "PU / PIR Core (Density 40 kg/m³), Thickness 50mm - 150mm" },
+      { key: "Insulation", value: "Rockwool Boards & Rolls (Density 40 - 140 kg/m³)" },
+      { key: "H120 Doors & Windows", value: "DNV / ABS Certified A60, H120 (EN 1363-2 / IMO FTP Code), Blast-Resistant" },
+      { key: "Air Conditioning", value: "Split, Window & Industrial HVAC (T3 Climate Rating)" }
+    ]
+  },
+  compliance: [
+    { title: "Civil Defense Approved", desc: "Sandwich panels and fire doors meet UAE Civil Defense regulations.", icon: "fas fa-certificate" },
+    { title: "DNV / ABS H120 Rating", desc: "Certified up to H120 (120 minutes hydrocarbon fire & 2.5 Bar blast resistance).", icon: "fas fa-fire-extinguisher" },
+    { title: "Energy Efficient", desc: "High thermal resistance (R-value) for reduced power consumption.", icon: "fas fa-leaf" },
+    { title: "Quality Guarantee", desc: "Durable, weather-sealed components engineered for long lifespan.", icon: "fas fa-award" }
+  ],
+  cta: {
+    heading: "Sourcing Container Materials or H120 Fire Doors?",
+    subtext: "Contact our trading specialists for customized quantities, approval drawings, and technical specifications.",
+    buttonText: "Request a Quote",
+    buttonLink: "/contact"
+  }
+};
+---
+<RentalDetailLayout data={pageData}>
+  <p>
+    Velcorix supplies high-quality container construction materials, insulation products, certified H120 hydrocarbon fire-rated doors & windows, and specialized HVAC equipment for modular projects and site infrastructure across the UAE.
+  </p>
+  <p>
+    Our combined trading inventory features PU/PIR sandwich panels, Rockwool mineral wool insulation, DNV/ABS certified A60/H120 fire-rated and blast doors, ceramic fire vision panels, as well as T3 desert-rated split, window, and industrial AC units with heavy-duty exhaust fans.
+  </p>
+</RentalDetailLayout>

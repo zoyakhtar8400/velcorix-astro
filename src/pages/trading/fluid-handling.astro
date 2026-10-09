@@ -1,0 +1,66 @@
+---
+import RentalDetailLayout from '../../layouts/RentalDetailLayout.astro';
+
+const pageData = {
+  metaTitle: "Fluid Handling & Cleaning Equipment - Velcorix Trading",
+  metaDesc: "Oil flushing units, high pressure hydro jetting machines, and pumps with skids supplied by Velcorix for industrial and oil & gas operations in UAE.",
+  header: {
+    title: "Fluid Handling & Cleaning Equipment",
+    subtitle: "Keeping your systems clean and efficient",
+    bgImage: "/assets/images/rentals/hydrotest.jpg"
+  },
+  intro: {
+    image: "/assets/images/products/fluid/pummpprocess.png",
+    imageAlt: "Fluid Handling & Cleaning Equipment",
+    heading: "Industrial Fluid Handling & High-Pressure Cleaning Solutions"
+  },
+  products: [
+    { name: "Oil Flushing Units (NAS 1638 / ISO 4406)", image: "/assets/images/rentals/hydrotest-3.jpg", desc: "High-flow oil flushing skids meeting NAS 1638 & ISO 4406 cleanliness standards." },
+    { name: "High Pressure Hydro Jetting Machines (700–1,000 Bar)", image: "/assets/images/products/fluid/jetting.png", imageStyle: "max-height: 80%; max-width: 80%; object-fit: contain; padding: 10px;", desc: "Ultra high-pressure hydro jetting units for tube, pipe, and vessel cleaning." },
+    { name: "Transfer Pumps with Skids", image: "/assets/images/products/fluid/Transferpump.jpeg", desc: "Skid-mounted diesel and electric liquid transfer pumps." },
+    { name: "Process Pumps with Skids", image: "/assets/images/products/fluid/pummpprocess.png", desc: "Heavy-duty process pumps for refinery and chemical plant applications." },
+    { name: "Industrial Pumps with Skids", image: "/assets/images/products/fluid/IndustrialPumpsSkids.jpeg", desc: "Robust industrial water, slurry, and general utility skid pumps." }
+  ],
+  offerings: [
+    { title: "NAS / ISO Cleanliness", desc: "Flushing units certified to reach ISO 4406 / NAS 6 cleanliness levels.", icon: "fas fa-filter" },
+    { title: "700 – 1,000 Bar Jetting", desc: "High pressure jetting for heavy scale, sludge, and deposit removal.", icon: "fas fa-water" },
+    { title: "Skid Mounted Flexibility", desc: "Heavy-duty skid frames with lifting lugs for easy site transport.", icon: "fas fa-box" },
+    { title: "Complete Accessories", desc: "Supplied with pressure hoses, nozzles, lances, and filtration packs.", icon: "fas fa-tools" }
+  ],
+  applications: [
+    { title: "Refinery Turnarounds", desc: "Pre-commissioning chemical cleaning & hydraulic oil flushing.", icon: "fas fa-industry" },
+    { title: "Heat Exchanger Maintenance", desc: "Hydro jetting tube bundle ID/OD scale removal.", icon: "fas fa-cogs" },
+    { title: "Pipeline Pre-Commissioning", desc: "High-volume line filling, flushing, and pressure testing.", icon: "fas fa-project-diagram" },
+    { title: "Offshore Facilities", desc: "ATEX / Zone 2 process pump skids and flushing rigs.", icon: "fas fa-ship" }
+  ],
+  specifications: {
+    image: "/assets/images/rentals/hydrotest.jpg",
+    items: [
+      { key: "Flushing Standard", value: "NAS 1638 Class 4-6 / ISO 4406 14/12/9" },
+      { key: "Jetting Pressure", value: "700 Bar to 1,000 Bar" },
+      { key: "Pump Types", value: "Transfer, Process, Industrial Skid Units" },
+      { key: "Drive Options", value: "Diesel Engine / Explosion-Proof Electric Motor" }
+    ]
+  },
+  compliance: [
+    { title: "ISO 4406 Certified", desc: "Particle counting & fluid cleanliness documentation included.", icon: "fas fa-certificate" },
+    { title: "Pressure Vessel Rated", desc: "Hoses and manifolds certified to ASME B31.3 & API standards.", icon: "fas fa-shield-alt" },
+    { title: "Factory Tested", desc: "100% hydrotested and function-tested prior to dispatch.", icon: "fas fa-clipboard-check" },
+    { title: "Engineering Support", desc: "Technical assistance for flushing flow rate calculations.", icon: "fas fa-headset" }
+  ],
+  cta: {
+    heading: "Need Fluid Handling or Jetting Equipment?",
+    subtext: "Contact our sales engineers for technical specifications and supply options.",
+    buttonText: "Request a Quote",
+    buttonLink: "/contact"
+  }
+};
+---
+<RentalDetailLayout data={pageData}>
+  <p>
+    Velcorix supplies advanced fluid handling and high-pressure cleaning equipment tailored for critical oil & gas, petrochemical, and industrial operations across the UAE.
+  </p>
+  <p>
+    Our supply lineup includes NAS 1638 / ISO 4406 certified hydraulic oil flushing units, 700 to 1,000 Bar hydro jetting machines for scale and deposit removal, and heavy-duty skid-mounted transfer, process, and industrial pump packages.
+  </p>
+</RentalDetailLayout>
